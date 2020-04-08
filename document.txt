@@ -1,0 +1,14 @@
+定义切面类
+    @Aspect注解
+在类里边定义一个空方法作为切点
+    // 定义切点 org.javaboy.aop.service 下所有的类所有的方法 参数任意 返回值任意
+    @Pointcut("execution(* org.javaboy.aop.service.*.*(..))")
+    public void aop(){
+
+    }
+配置通知类型
+    前置通知
+    后置通知
+    环绕通知
+    异常通知
+    返回通知
